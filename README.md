@@ -22,12 +22,24 @@ The image creates a running instance of eXist-db, with the required 3M resources
 
 * EXIST_ADMIN_PASSWORD: allows the user defining the password for the admin user of the eXist-db running instance. If the variable is not set when running the container, then the default password will be used (admin)
 
-## Docker image
+Below you will find instructions for running eXist-db using alternative (external) ports and admin passwords.
 
-The latest docker image (v 2.0) is available at docker hub under the repostory marketak
+To start your container binding to port 8081 using the default password (admin): 
 
 ```
-docker pull marketak/existdb-3m:2.0
+docker run -d -p 8081:8080 marketak/existdb-rm:latest
+```
+
+To start your container binding to port 8081 using the user-defined password myPassword: 
+
+```
+docker run -d -p 8081:8080 -e EXIST_ADMIN_PASSWORD=myPassword marketak/existdb-rm:latest
+```
+
+After running the container you can check if the instance is up and running by pasting the link below in your web browser
+
+```
+http://localhost:8081/exist/
 ```
 
 ### Maintainers
