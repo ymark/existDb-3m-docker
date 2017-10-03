@@ -18,7 +18,7 @@ More information about 3M and its related components can be found at http://www.
 
 ## How to use
 
-The image creates a running instance of eXist-db, with the required 3M resources allready shipped in, so that it can work as the underlying layer of 3M framework. The container starts the eXist-db and listens for incoming connection at port 8081. The following environment variables are available for managing the existdb-3m container:
+The image creates a running instance of eXist-db, with the required 3M resources allready shipped in, so that it can work as the underlying layer of 3M framework. The container starts the eXist-db and listens for incoming connection at port 8080. The following environment variables are available for managing the existdb-3m container:
 
 * EXIST_ADMIN_PASSWORD: allows the user defining the password for the admin user of the eXist-db running instance. If the variable is not set when running the container, then the default password will be used (admin)
 
