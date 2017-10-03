@@ -29,3 +29,7 @@ The latest docker image (v 2.0) is available at docker hub under the repostory m
 ```
 docker pull marketak/existdb-3m:2.0
 ```
+
+### Maintainer 
+
+Yannis Marketakis (marketak 'at' ics 'dot' forth 'dot' gr)
