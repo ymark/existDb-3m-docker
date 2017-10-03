@@ -1,7 +1,9 @@
 # README #
 
 The repository contains the necessary resources that are required for creating a docker image for exist-db with the 
-required database resources for working with 3M
+required database resources for working with 3M.
+
+The image is build upon the docker image for eXist-db from [davidgaya/existdb](https://hub.docker.com/r/davidgaya/existdb/)
 
 ## ExistDb
 
