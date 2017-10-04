@@ -1,8 +1,10 @@
 FROM davidgaya/existdb:latest
 
-# Version 2.1
-
-MAINTAINER Yannis Marketakis
+LABEL image.maintainer="Yannis Marketakis" \
+	image.organization="FORTH-ICS" \
+	image.version="2.2" \
+	image.lastupdate="2017-10-04" \
+	image.description="eXist-db image with 3M Resources"
 
 ADD entrypoint.sh /entrypoint.sh
 
