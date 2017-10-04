@@ -27,13 +27,13 @@ Below you will find instructions for running eXist-db using alternative (externa
 To start your container binding to port 8081 using the default password (admin): 
 
 ```
-docker run -d -p 8081:8080 marketak/existdb-rm:latest
+docker run -d -p 8081:8080 marketak/existdb-3m:latest
 ```
 
 To start your container binding to port 8081 using the user-defined password myPassword: 
 
 ```
-docker run -d -p 8081:8080 -e EXIST_ADMIN_PASSWORD=myPassword marketak/existdb-rm:latest
+docker run -d -p 8081:8080 -e EXIST_ADMIN_PASSWORD=myPassword marketak/existdb-3m:latest
 ```
 
 After running the container you can check if the instance is up and running by pasting the link below in your web browser
