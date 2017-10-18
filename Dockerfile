@@ -16,4 +16,4 @@ EXPOSE 8080
 
 VOLUME ["/opt/exist/webapp/WEB-INF/data/","/3M/"]
 
-ENTRYPOINT ["/entrypoint.sh"]
+CMD ["/entrypoint.sh"]
