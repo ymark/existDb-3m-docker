@@ -18,7 +18,7 @@ More information about 3M and its related components can be found at http://www.
 
 ## How to use
 
-The image creates a running instance of eXist-db, with the required 3M resources allready shipped in, so that it can work as the underlying layer of 3M framework. The container starts the eXist-db and listens for incoming connection at port 8080. The following environment variables are available for managing the existdb-3m container:
+The image creates a running instance of eXist-db, with the required 3M resources allready shipped in, so that it can work as the underlying layer of 3M framework. The container starts the eXist-db and listens for incoming connection at port 8081. The following environment variables are available for managing the existdb-3m container:
 
 * EXIST_ADMIN_PASSWORD: allows the user defining the password for the admin user of the eXist-db running instance. If the variable is not set when running the container, then the default password will be used (admin)
 
@@ -27,13 +27,13 @@ Below you will find instructions for running eXist-db using alternative (externa
 To start your container binding to port 8081 using the default password (admin): 
 
 ```
-docker run -d -p 8081:8080 marketak/existdb-3m:latest
+docker run -d -p 8081:8081 marketak/existdb-3m:latest
 ```
 
 To start your container binding to port 8081 using the user-defined password myPassword: 
 
 ```
-docker run -d -p 8081:8080 -e EXIST_ADMIN_PASSWORD=myPassword marketak/existdb-3m:latest
+docker run -d -p 8081:8081 -e EXIST_ADMIN_PASSWORD=myPassword marketak/existdb-3m:latest
 ```
 
 After running the container you can check if the instance is up and running by pasting the link below in your web browser

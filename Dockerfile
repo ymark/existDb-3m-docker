@@ -12,7 +12,12 @@ COPY Resources/3M /3M
 
 ADD Resources/data.tar.gz /opt/exist/webapp/WEB-INF/
 
-EXPOSE 8080
+RUN sed -i 's/8080/8081/g' /opt/exist/tools/jetty/etc/jetty.xml \
+	&& sed -i 's/8080/8081/g' /opt/exist/client.properties \
+	&& sed -i 's/8080/8081/g' /opt/exist/backup.properties \
+	&& sed -i 's/8080/8081/g' /opt/exist/index.html
+
+EXPOSE 8081
 
 VOLUME ["/opt/exist/webapp/WEB-INF/data/","/3M/"]
 
